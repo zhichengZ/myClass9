@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+    .heart-shape {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        background-color: rgba(239, 70, 87, 1);
+
+        left:200px;
+        top: 100px;
+        animation: heartAnt 2.5s infinite;
+        -webkit-animation: heartAnt 2.5s infinite;
+    }
+    
+    .heart-shape:before,
+    .heart-shape:after {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        content: '';
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        background-color: rgba(239, 70, 87, 1);
+    }
+    
+    .heart-shape:before {
+        bottombottom: 0px;
+        left: -90px;
+    }
+    
+    .heart-shape:after {
+        top: -90px;
+        rightright: 0px;
+    }
+    @keyframes heartAnt {
+        0% {
+            -webkit-transform: rotate(45deg) scale(0.5);
+            -moz-transform: rotate(45deg) scale(0.5);
+            -ms-transform: rotate(45deg) scale(0.5);
+            -o-transform: rotate(45deg) scale(0.5);
+            transform: rotate(45deg) scale(0.5);
+        }
+        5% {
+            -webkit-transform: rotate(45deg) scale(0.65);
+            -moz-transform: rotate(45deg) scale(0.65);
+            -ms-transform: rotate(45deg) scale(0.65);
+            -o-transform: rotate(45deg) scale(0.65);
+            transform: rotate(45deg) scale(0.65);
+        }
+        10% {
+            -webkit-transform: rotate(45deg) scale(0.55);
+            -moz-transform: rotate(45deg) scale(0.55);
+            -ms-transform: rotate(45deg) scale(0.55);
+            -o-transform: rotate(45deg) scale(0.55);
+            transform: rotate(45deg) scale(0.55);
+        }
+        15% {
+            -webkit-transform: rotate(45deg) scale(0.75);
+            -moz-transform: rotate(45deg) scale(0.75);
+            -ms-transform: rotate(45deg) scale(0.75);
+            -o-transform: rotate(45deg) scale(0.75);
+            transform: rotate(45deg) scale(0.75);
+        }
+        50% {
+            -webkit-transform: rotate(45deg) scale(0.5);
+            -moz-transform: rotate(45deg) scale(0.5);
+            -ms-transform: rotate(45deg) scale(0.5);
+            -o-transform: rotate(45deg) scale(0.5);
+            transform: rotate(45deg) scale(0.5);
+        }
+        100% {
+            -webkit-transform: rotate(45deg) scale(0.5);
+            -moz-transform: rotate(45deg) scale(0.5);
+            -ms-transform: rotate(45deg) scale(0.5);
+            -o-transform: rotate(45deg) scale(0.5);
+            transform: rotate(45deg) scale(0.5);
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="heart-shape"></div>
+</body>
+
+</html>
